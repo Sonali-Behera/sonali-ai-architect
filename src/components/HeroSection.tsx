@@ -1,6 +1,5 @@
-
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Download, ExternalLink } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Download, ExternalLink, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToProjects = () => {
