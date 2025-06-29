@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       company: 'Third Rock Techkno',
       position: 'Junior Programmer Analyst',
       duration: 'Jan 2023 – Present',
-      location: 'Bhubaneswar, India',
+      location: 'Ahmedabad, India',
       description: 'Leading AI development initiatives and backend engineering projects in a dynamic startup environment.',
       achievements: [
         'Built scalable GenAI systems serving 10,000+ users with 99.9% uptime',
@@ -25,7 +25,7 @@ const ExperienceSection = () => {
 
   const achievements = [
     {
-      title: 'Hacktoberfest 2021 Contributor',
+      title: 'Hacktoberfest Contributor',
       description: 'Active open-source contributor with multiple accepted PRs',
       icon: '🏆'
     },

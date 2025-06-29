@@ -29,7 +29,7 @@ const AboutSection = () => {
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed">
-                My expertise spans across <span className="font-semibold">LangChain, LLM integration, FastAPI, and Node.js</span>, enabling me to create intelligent systems that solve complex real-world problems. I love turning abstract AI concepts into tangible, scalable solutions.
+                My expertise spans across <span className="font-semibold">LangChain, AI Agent & LLM integration, MCP, FastAPI, and Python</span>, enabling me to create intelligent systems that solve complex real-world problems. I love turning abstract AI concepts into tangible, scalable solutions.
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed">

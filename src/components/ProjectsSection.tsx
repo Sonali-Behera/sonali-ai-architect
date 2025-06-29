@@ -7,28 +7,28 @@ import { ExternalLink, Github } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'CODE GUARDIAN for GitHub',
-      description: 'Automated PR reviews with 95% accuracy and 40% time reduction. Features one-click merge, fault detection, and customizable LLM model usage for enterprise-grade code review automation.',
-      tags: ['LangChain', 'Python', 'FastAPI', 'AWS', 'Gemini', 'GitHub API'],
+      title: 'AI-Powered Security & Compliance Assistant',
+      description: 'Built an AI-powered app that automates IaC compliance checks with 95% accuracy and 40% faster reviews. Features auto-remediation, one-click fixes, GitHub/VS Code integration, and a live dashboard for real-time insights.',
+      tags: ['LangChain', 'Python', 'FastAPI', 'AWS', 'Azure', 'OpenAI', 'GitHub API', 'MCP', 'MongoDB'],
       achievements: ['95% Review Accuracy', '40% Time Reduction', 'Enterprise Ready'],
-      demoUrl: '#',
+      demoUrl: 'https://compliancewarden.com/',
       githubUrl: '#',
       featured: true
     },
     {
       title: 'AI-Powered Meditation Assistant',
-      description: 'Built a mental wellness chatbot with intelligent conversation flows, resulting in 30% faster response time and 25% longer user engagement sessions through personalized AI interactions.',
-      tags: ['NestJS', 'OpenAI', 'RAG', 'PostgreSQL', 'TypeScript'],
+      description: 'Built an AI-powered mental wellness chatbot with intelligent conversation flows to handle queries on app features, meditation, and mental health, resulting in 30% faster response times and 25% longer user engagement.',
+      tags: ['NestJS', 'OpenAI', 'RAG', 'PostgreSQL', 'TypeScript', 'Langchain'],
       achievements: ['30% Faster Response', '25% Longer Sessions', 'RAG Integration'],
       demoUrl: '#',
       githubUrl: '#',
       featured: true
     },
     {
-      title: 'Smart User Data Agent',
-      description: 'AI-driven user data capture system with intelligent validation and automated follow-up mechanisms. Streamlines data collection processes with natural language processing.',
+      title: 'Conversational Data Collection Agent',
+      description: 'Built an AI assistant that replaces static forms with dynamic chats, achieving 90% email validation accuracy and boosting lead quality by 35% through personalized user interactions and automated follow-ups.',
       tags: ['Node.js', 'NestJS', 'LangChain', 'MongoDB', 'Express'],
-      achievements: ['Automated Validation', '85% Data Accuracy', 'Smart Follow-ups'],
+      achievements: ['Automated Validation', '90% Data Accuracy', 'Smart Follow-ups'],
       demoUrl: '#',
       githubUrl: '#',
       featured: false
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex gap-3 pt-4">
+                  {/* <div className="flex gap-3 pt-4">
                     <Button 
                       size="sm" 
                       className="flex-1 bg-primary hover:bg-primary/90 text-white"
@@ -111,14 +111,14 @@ const ProjectsSection = () => {
                     >
                       <Github className="w-4 h-4" />
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
           </div>
 
           {/* View More Projects */}
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button 
               variant="outline" 
               size="lg"
@@ -128,7 +128,7 @@ const ProjectsSection = () => {
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

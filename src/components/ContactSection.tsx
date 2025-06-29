@@ -43,26 +43,26 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'sonalibehera.bbsr@gmail.com',
+      value: 'Drop me a message',
       link: 'mailto:sonalibehera.bbsr@gmail.com'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
       value: 'Bhubaneswar, India',
-      link: null
+      link: 'https://maps.app.goo.gl/btrB6qyDxNdksLhz8'
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       title: 'LinkedIn',
       value: 'Connect with me',
-      link: 'https://linkedin.com'
+      link: 'https://www.linkedin.com/in/sonali-behera'
     },
     {
       icon: <Github className="w-6 h-6" />,
       title: 'GitHub',
       value: 'View my code',
-      link: 'https://github.com'
+      link: 'https://github.com/Sonali-Behera'
     }
   ];
 
