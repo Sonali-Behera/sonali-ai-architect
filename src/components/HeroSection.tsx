@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Download, ExternalLink, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Download, ExternalLink, Mail, Twitter } from 'lucide-react';
+import { Images } from '../assets/images'
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -23,7 +24,7 @@ const HeroSection = () => {
           {/* Avatar */}
           <div className="mb-8 opacity-0 animate-fade-in">
             <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-primary to-purple-600 rounded-full flex items-center justify-center text-4xl font-bold text-white shadow-2xl">
-              SB
+              <img src={Images.sonaliImage} alt="Logo" className="w-full h-full rounded-full" />
             </div>
           </div>
 
@@ -52,7 +53,7 @@ const HeroSection = () => {
             <Button
               onClick={scrollToProjects}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl"
             >
               View Projects
               <ExternalLink className="w-5 h-5 ml-2" />
@@ -72,7 +73,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12 opacity-0 animate-fade-in animate-delay-600">
             <a
-              href="https://github.com"
+              href="https://github.com/Sonali-Behera"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
@@ -80,12 +81,20 @@ const HeroSection = () => {
               <Github className="w-6 h-6 text-gray-700" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sonali-behera"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
             >
               <Linkedin className="w-6 h-6 text-blue-600" />
+            </a>
+            <a
+              href="https://x.com/AIWithSonali"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+            >
+              <Twitter className="w-6 h-6 text-primary" />
             </a>
             <button
               onClick={scrollToContact}

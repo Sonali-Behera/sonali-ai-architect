@@ -7,17 +7,17 @@ const SkillsSection = () => {
     {
       title: 'Programming Languages',
       icon: '💻',
-      skills: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'C++', 'Bash'],
+      skills: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'C++'],
     },
     {
       title: 'AI & Machine Learning',
       icon: '🤖',
-      skills: ['LangChain', 'OpenAI API', 'Transformers', 'RAG', 'Embeddings', 'Prompt Engineering', 'HuggingFace'],
+      skills: ['LangChain', 'LangGraph', 'MCP', 'OpenAI', 'Transformers', 'RAG', 'Embeddings', 'Prompt Engineering', 'VectorDB', 'Claude AI', 'DeepSeek AI', 'Grok AI', 'Google AI Studio'],
     },
     {
       title: 'Backend Frameworks',
       icon: '⚡',
-      skills: ['FastAPI', 'Node.js', 'NestJS', 'Express.js', 'Django', 'Flask'],
+      skills: ['FastAPI', 'Node.js', 'NestJS', 'Express.js', 'Streamlit', 'Flask'],
     },
     {
       title: 'Cloud & DevOps',
@@ -27,12 +27,12 @@ const SkillsSection = () => {
     {
       title: 'Databases',
       icon: '🗄️',
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'SQLite', 'Vector DBs'],
+      skills: ['PostgreSQL', 'MongoDB', 'SQLite', 'Vector DBs'],
     },
     {
       title: 'Tools & Technologies',
       icon: '🛠️',
-      skills: ['REST APIs', 'GraphQL', 'Postman', 'Jupyter', 'VS Code', 'Agile/Scrum'],
+      skills: ['REST APIs', 'Postman', 'Jupyter', 'VS Code', 'Agile/Scrum', 'GitHub'],
     },
   ];
 
@@ -91,7 +91,7 @@ const SkillsSection = () => {
                   <span className="text-white text-2xl font-bold">AI</span>
                 </div>
                 <h4 className="font-semibold text-gray-900">Generative AI Development</h4>
-                <p className="text-gray-600 text-sm">LLM integration, RAG systems, and intelligent automation solutions</p>
+                <p className="text-gray-600 text-sm">LLM & Agent integration, MCP, RAG systems, Prompt Engineering and intelligent automation solutions</p>
               </div>
               
               <div className="space-y-4">

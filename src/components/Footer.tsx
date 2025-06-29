@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,12 +16,17 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: <Github className="w-5 h-5" />,
-      url: 'https://github.com',
+      url: 'https://github.com/Sonali-Behera',
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-5 h-5" />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/sonali-behera',
+    },
+    {
+      name: 'Twitter',
+      icon: <Twitter className="w-5 h-5" />,
+      url: 'https://x.com/AIWithSonali',
     },
     {
       name: 'Email',
