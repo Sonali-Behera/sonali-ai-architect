@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Download, ExternalLink, Mail, Twitter } from 'lucide-react';
 import { Images } from '../assets/images'
+import { toast } from '@/components/ui/use-toast';
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -15,6 +16,13 @@ const HeroSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleResumeDownload = () => {
+    toast({
+      title: "Success!",
+      description: "Thanks for downloading!",
+    });
   };
 
   return (
@@ -58,16 +66,24 @@ const HeroSection = () => {
               View Projects
               <ExternalLink className="w-5 h-5 ml-2" />
             </Button>
-            
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold transition-all duration-300"
-              onClick={() => window.open('#', '_blank')}
+
+            <a
+              href="/Sonali_Behera_Resume.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleResumeDownload}
             >
-              Download Resume
-              <Download className="w-5 h-5 ml-2" />
-            </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold transition-all duration-300"
+              >
+                Download Resume
+                <Download className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
+
           </div>
 
           {/* Social Links */}

@@ -1,10 +1,9 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Send, Twitter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -28,15 +27,31 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    const formData = new FormData(e.target as HTMLFormElement);
+    formData.append("access_key", "4d1be9eb-c23a-451d-9cc8-ae65e256a930");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+
+    const data = await response.json();
+
+    if (data.success) {
       toast({
         title: "Message sent successfully!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+    } else {
+      toast({
+        title: "Message failed to send.",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -44,7 +59,7 @@ const ContactSection = () => {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
       value: 'Drop me a message',
-      link: 'mailto:sonalibehera.bbsr@gmail.com'
+      link: 'mailto:contact.sonalibehera@gmail.com'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
