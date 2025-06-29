@@ -31,7 +31,7 @@ const Footer = () => {
     {
       name: 'Email',
       icon: <Mail className="w-5 h-5" />,
-      url: 'mailto:sonalibehera.bbsr@gmail.com',
+      url: 'mailto:contact.sonalibehera@gmail.com',
     },
   ];
 
@@ -106,7 +106,7 @@ const Footer = () => {
                 ))}
               </div>
               <div className="text-gray-400 text-sm space-y-1">
-                <p>sonalibehera.bbsr@gmail.com</p>
+                <p>contact.sonalibehera@gmail.com</p>
                 <p>Available for collaboration</p>
               </div>
             </div>
