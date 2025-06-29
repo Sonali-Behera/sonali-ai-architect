@@ -6,7 +6,7 @@ const AboutSection = () => {
     { number: '2+', label: 'Years Experience' },
     { number: '400+', label: 'Problems Solved' },
     { number: '5+', label: 'AI Products Deployed' },
-    { number: '15+', label: 'Tech Seminars Led' },
+    { number: '5+', label: 'Tech Seminars Led' },
   ];
 
   return (
