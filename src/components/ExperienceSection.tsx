@@ -11,12 +11,13 @@ const ExperienceSection = () => {
       location: 'Ahmedabad, India',
       description: 'Leading AI development initiatives and backend engineering projects in a dynamic startup environment.',
       achievements: [
-        'Built scalable GenAI systems serving 10,000+ users with 99.9% uptime',
+        'Developed advanced GenAI solutions using OpenAI GPT-4.1, o3, Deepseek, Gemini, Claude, Grok, LLAMA, and Mistral.',
         'Led backend projects using FastAPI & Node.js, reducing API response time by 35%',
-        'Conducted 15+ company-wide AI seminars, upskilling 50+ team members',
-        'Collaborated cross-functionally in agile setups, delivering 8 major features',
+        'Conducted 5+ company-wide AI seminars, upskilling 50+ team members',
+        'Collaborated cross-functionally in agile setups, delivering major features',
         'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Architected microservices handling 1M+ daily requests'
+        'Built scalable GenAI systems serving users with 99.9% ',
+        // 'Architected microservices handling 1M+ daily requests'
       ],
       technologies: ['Python', 'FastAPI', 'Node.js', 'LangChain', 'AWS', 'Docker', 'PostgreSQL'],
       current: true
@@ -36,12 +37,12 @@ const ExperienceSection = () => {
     },
     {
       title: 'AI Seminar Leader',
-      description: 'Conducted 15+ technical workshops on AI and backend development',
+      description: 'Conducted 5+ technical workshops on AI and backend development',
       icon: '🎯'
     },
     {
       title: 'Team Collaboration',
-      description: 'Cross-functional agile team experience with 8+ major deliverables',
+      description: 'Cross-functional agile team experience with major deliverables',
       icon: '🤝'
     }
   ];
