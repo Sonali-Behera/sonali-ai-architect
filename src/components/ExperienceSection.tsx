@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       company: 'Third Rock Techkno',
-      position: 'Junior Programmer Analyst',
+      position: 'Software Engineer',
       duration: 'Jan 2023 – Present',
       location: 'Ahmedabad, India',
       description: 'Leading AI development initiatives and backend engineering projects in a dynamic startup environment.',
